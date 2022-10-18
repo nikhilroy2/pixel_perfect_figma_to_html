@@ -150,6 +150,9 @@ button {
   font-weight: normal;
 }
 
+header#Header {
+  margin-right: 5.55vw;
+}
 header#Header .inner_wrapper {
   display: flex;
   align-items: center;
