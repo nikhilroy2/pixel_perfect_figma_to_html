@@ -1,0 +1,191 @@
+/* .................global css............. */
+
+// font-family: 'Inter', sans-serif;
+// font-family: 'Plus Jakarta Sans', sans-serif;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+  font-family: 'Inter', sans-serif;
+}
+
+:root {
+  // ...... font variable
+  --font-44: 4.4rem;
+  --font-36: 3.6rem;
+  --font-18: 1.8rem;
+  --font-16: 1.6rem;
+  --font-14: 1.4rem;
+  --font-12: 1.2rem;
+  --font-inter: 'Inter', sans-serif;
+  --font-jakarta: 'Plus Jakarta Sans', sans-serif;
+  //....... color variable
+  --text-35: #232E35;
+  --text-72: #656D72;
+  --text-f1: #7E74F1;
+  --text-fb: #FBFBFB;
+  --text-fe: #F5F3FE;
+  --text-ea: #F5F3FE;
+  --text-ea-50: rgba(245, 243, 254, 0.5);
+  --text-ff: #fff;
+  --text-0: #000;
+
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+body {
+  font-size: 16px;
+  background: var(--text-0);
+  color: var(--text-35);
+  margin: 0;
+  padding: 0;
+
+  .body_wrapper {
+    max-width: 1440px;
+    min-height: 100vh;
+    background: var(--text-ff);
+    margin: auto;
+  }
+}
+
+// font class
+h1,
+.font_44 {
+  font-size: 4.4rem;
+}
+
+h2,
+.font_36 {
+  font-size: 3.6rem;
+}
+
+h3,
+.font_18 {
+  font-size: 1.8rem;
+}
+
+h4,
+.font_16 {
+  font-size: 1.6rem;
+}
+
+h5,
+.font_14 {
+  font-size: 1.4rem;
+}
+
+h6,
+.font_12 {
+  font-size: 1.2rem;
+}
+
+.space_32 {
+  letter-spacing: 3.2rem;
+}
+
+.space_24 {
+  letter-spacing: 2.4rem;
+}
+
+// ......font family .........
+.font_inter {
+  font-family: 'Inter', sans-serif;
+}
+
+.font_jakarta {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+// .......... color ...........
+.text_35 {
+  color: var();
+}
+
+.text_72 {
+  color: #656D72;
+}
+
+.text_f1 {
+  color: #7E74F1;
+}
+
+.text_fb {
+  color: #FBFBFB;
+}
+
+.text_fe {
+  color: #F5F3FE;
+}
+
+.text_ea {
+  color: #F5F3FE;
+}
+
+.text_ea_50 {
+  color: rgba(245, 243, 254, 0.5);
+}
+
+.text_ff {
+  color: #fff;
+}
+
+.text_0 {
+  color: #000;
+}
+
+// ... others .....
+a {
+  color: inherit;
+  text-decoration: none;
+  display: inline-block;
+}
+
+button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.inner_wrapper {
+  padding-left: 6.25vw; // calc = width = 1920px and so 1920/100vw = 19.2 mean 1 vw = 19.2px so 120 px = 120/19.2 6.25vw;
+}
+
+.btn_resume {
+  width: 102px;
+  height: 49px;
+  font-weight: normal;
+}
+
+// ........ Header........
+header#Header {
+  .inner_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .horizontal_list {
+      display: flex;
+      align-items: center;
+
+      .list_item {
+        margin-right: 2.92vw;
+        font-weight: normal;
+      }
+    }
+    .btn_box{
+      @extend .horizontal_list;
+      .mode_btn{
+        margin-right: 1.67vw;
+      }
+    }
+  }
+}
+
+
+
+// component class 
